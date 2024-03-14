@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import Products from "./components/views/Products/Products";
+
+const Wrapper = styled.div({
+  backgroundColor: '#dcdcdc',
+  height: '100vh',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});
+
+const Container = styled.div({
+  width: '85%',
+  height: '90%',
+  backgroundColor: 'white',
+  borderRadius: '3px',
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Container>
+        <Products />
+      </Container>
+    </Wrapper> 
   );
 }
 

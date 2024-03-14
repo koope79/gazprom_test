@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@styled/typescript-styled-plugin",
+        "tags": ["styled", "css", "sty"]
+      }
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -7,15 +13,16 @@
       "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
+    "noImplicitAny": true,
+    //"skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    //"strict": true,
+    //"forceConsistentCasingInFileNames": true,
+    //"noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    //"resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
